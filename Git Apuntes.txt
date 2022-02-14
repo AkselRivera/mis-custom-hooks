@@ -1,0 +1,141 @@
+Git
+ -- Palabra completa
+ - abreviatura
+
+git help //  Nos muestra la ayuda de git
+
+git help Comando // Nos muestra ayuda de algun comando en especificio
+
+
+git init //Inicializa el proyecto
+
+git status //Nos muestra el estado actual de nuestro repositorio 
+		(Archivos tracked o listos y untracked)
+
+git add . //Prepara todos los archivos del repositorio para el commit
+
+git reset NombreArchivo //Quita el archivo seleccionado del commit
+
+git commit -m "Mensaje" //Realiza el commit 
+
+
+
+// git config core.autocrlf true (CRLF)
+
+git checkout -- . //Nos rescribe el codigo a la ultima version guardada.
+ git branch -m master main //Cambio de nombre local en repositorio
+ git config --global init.defaultBranch main //DE manera Global
+
+
+git commit -am "README modificado" //Add y commit de una solo funciona en modifcados
+
+git log //Podemos ver los logs de nuestro repositorio
+
+git add *.html //Podemos agregar todos los archivos de un solo 
+		tipo con el comodin *
+
+
+git status --short //Resumen del status
+
+git config --global alias.s status --short // Crear alias o shortcuts!
+
+git config --global --e  //Informacion global del proyecto.
+
+ git log --oneline // log oneline
+
+
+Git alias Log Fernando herrera
+git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+
+git lg 
+
+
+git diff //Nos muestra la diferencia de los archivos!
+
+git commit --amend -m "Mensaje" // Actualizar el ultimo commit
+
+
+git -A 
+
+/* 
+Warning 
+
+git config core.autocrlf true
+*/
+
+
+ git reflog //Referencia de todo lo sucedido dentro de neustro repo
+
+
+git branch NombreRama //Crear Ramas 
+
+git checkout -b rama-villanos //Crear Ramas y cambiar a la nueva
+
+git checkout NombreRama //Cambiar entre ramas
+
+git merge NombreRama //Traer los cambios de la Rama a la Rama actual
+
+git branch-d NombreRama //Eliminar rama
+git branch-d NombreRama -f //Eliminar rama de forma forzada
+
+
+git tag NombreTag //Creacion de tags
+git tag -d NombreTag //Eliminar tag
+.
+git tag -a v1.0.0 -m "Version 1.0.0 lista" //Lista con versiones
+
+	v1 breaking changes, version mayor, etc.
+	.
+	0  añadir cierta funcionalidad sin llegar a ser version mayor
+	.
+	0  Correccion de bugs o errores.
+
+git stash //Crear un stash
+git stash save "Descripcin" //Guarda el stash con el nombre dado
+
+git stash list //Stash list
+
+git stash pop //Drop down stashed
+
+git stash drop //Eliminar Stash
+git stash clear //Eliminar todo en stash
+
+git rebase -i HEAD~2 //Entrar al modo rebase para manipular commits
+
+git push --tags //Push tags to github
+
+git remote -v //Conocer el fetch y pull de nuestro repositorio
+
+git fetch // Permite actualizar referencias sin hacer un merge o un rebase
+
+git remote add upstream //Agregar un repositorio upstream, es aquel que nos permite descaragr informacion unicamente 
+
+git pull upstream master //Traer informacion del upstream y especificar la linea deseada
+
+git fetch
+git branch -a //Conocer todas las ramas existentes
+git checkout NombreRama //Pasarnos a la rama 
+
+git pull --all //Rescatar toda la información del repositorio
+
+git branch -a 
+git branch --all //Listado de todas las listas existentes
+
+
+git remote prune origin //Chequeo con el origin y ver que ramas fueron eliminadas entre otras cosas
+
+
+GIST //Mini reposirotio publico para compartir pedazos de codigo o snipets, etc.
+
+SSH GEN
+
+
+ls .ssh // Ver si ya tenemos una carpeta .ssh
+
+mkdir .ssh // Crear la carpeta
+
+ssh-keygen -t rsa -C "correo@correo.com"
+
+(Nos pedira dos cosas, debemos dar enter y enter a ambas)
+
+
