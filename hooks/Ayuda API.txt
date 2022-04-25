@@ -1,0 +1,38 @@
+Public 
+c6260db2e2172f079f62b71f9b517851
+
+Private
+9b481797fae446ac6ada60bfd9d796015f00776a
+
+authorize reffers
+developer.marvel.com
+
+
+		Primer fetch
+
+// const {data} = useFetch();
+
+  // const [heroe, setHeroe] = useState({data:[]});
+
+
+// const heroesFetch= async()=>{
+//   const resp = await fetch('https://gateway.marvel.com:443/v1/public/characters?limit=30&apikey=c6260db2e2172f079f62b71f9b517851&hash=35199c0e31378456364000e2ef4aa6bc&ts=1');
+//     const body= await resp.json();
+
+//     console.log(body);
+
+//     const heros= body.data.results.map(hero=> {
+//         return {
+//             id:hero.id,
+//             name:hero.name,
+//             url: `${hero.thumbnail.path}.${hero.thumbnail.extension}`
+//         }
+//     });
+
+    // setHeroe( {
+    //   data:heros
+    // })
+
+
+//     return heros;
+// }
