@@ -21,3 +21,32 @@ const useForm = (initialState={}) => {
 };
 
 export default useForm;
+
+
+
+
+/*
+Example -->
+
+
+ const [formValues,handleInputChange]=useForm({search:''});
+  const {search} = formValues;
+
+
+  return (
+    <div className='fondo'>
+
+        <input
+        className='p-1'
+            type='text'
+            name={'search'}
+            onChange={handleInputChange}
+            value={search}
+            
+            />
+        <button className='search mt-2 btn btn-outline-dark'>Search</button>
+    </div>
+  )
+
+
+*/
